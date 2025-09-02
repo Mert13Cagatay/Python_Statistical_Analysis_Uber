@@ -6,37 +6,37 @@
 [![Pandas](https://img.shields.io/badge/Pandas-1.5+-green.svg)](https://pandas.pydata.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📊 Proje Akış Şeması
+## 📊 Project Flow Diagram
 
 ```mermaid
 graph TD
-    A["🚗 Uber Ride Analytics<br/>150,000 sürüş verisi"] --> B["🔍 Aşama 1: Tam Veri Analizi"]
-    A --> C["🧹 Aşama 2: Outlier Temizleme"]
-    A --> D["⚖️ Aşama 3: Karşılaştırmalı Analiz"]
+    A["🚗 Uber Ride Analytics<br/>150,000 ride records"] --> B["🔍 Phase 1: Full Data Analysis"]
+    A --> C["🧹 Phase 2: Outlier Cleaning"]
+    A --> D["⚖️ Phase 3: Comparative Analysis"]
     
-    B --> B1["📊 Temel İstatistikler"]
-    B --> B2["📈 Görselleştirmeler"]
-    B --> B3["🔬 Güvenirlik Testleri"]
-    B --> B4["🔗 Korelasyon Analizi"]
+    B --> B1["📊 Basic Statistics"]
+    B --> B2["📈 Visualizations"]
+    B --> B3["🔬 Reliability Tests"]
+    B --> B4["🔗 Correlation Analysis"]
     
-    C --> C1["📏 IQR Yöntemi<br/>(1.5, 2.0, 2.5)"]
-    C --> C2["📊 Z-Score Yöntemi<br/>(1.5, 2.0, 2.5)"]
+    C --> C1["📏 IQR Method<br/>(1.5, 2.0, 2.5)"]
+    C --> C2["📊 Z-Score Method<br/>(1.5, 2.0, 2.5)"]
     C --> C3["🎯 Modified Z-Score<br/>(1.5, 2.0, 2.5)"]
     
-    D --> D1["📋 Öncesi vs Sonrası"]
-    D --> D2["⭐ Yöntem Etkinliği"]
-    D --> D3["📝 Sonuç Raporlaması"]
+    D --> D1["📋 Before vs After"]
+    D --> D2["⭐ Method Effectiveness"]
+    D --> D3["📝 Results Reporting"]
     
-    B1 --> E["🎯 Güvenirlik Skoru: 75.0/100"]
-    B2 --> F["📁 5 Görsel Dosya"]
-    B3 --> G["🧪 4 Normallik Testi"]
-    B4 --> H["🔍 1 Düşük Korelasyon"]
+    B1 --> E["🎯 Reliability Score: 75.0/100"]
+    B2 --> F["📁 5 Visual Files"]
+    B3 --> G["🧪 4 Normality Tests"]
+    B4 --> H["🔍 1 Low Correlation"]
     
-    C1 --> I["🏆 En İyi: IQR 2.0"]
+    C1 --> I["🏆 Best: IQR 2.0"]
     C2 --> I
     C3 --> I
     
-    I --> J["✅ Veri Kaybı: %2.00<br/>Minimal İyileşme"]
+    I --> J["✅ Data Loss: 2.00%<br/>Minimal Improvement"]
     
     style A fill:#e1f5fe
     style E fill:#c8e6c9
@@ -97,25 +97,25 @@ python uber_data_analysis.py
 
 ```mermaid
 flowchart LR
-    subgraph "📊 Veri Seti"
-        A["150,000 satır<br/>21 sütun<br/>111 MB"]
-        A1["📅 Kategorik: 12"]
-        A2["🔢 Sayısal: 9"]
+    subgraph "📊 Dataset"
+        A["150,000 rows<br/>21 columns<br/>111 MB"]
+        A1["📅 Categorical: 12"]
+        A2["🔢 Numeric: 9"]
         A --> A1
         A --> A2
     end
     
-    subgraph "🔬 İstatistiksel Testler"
-        B1["🧪 Normallik Testleri<br/>• Shapiro-Wilk<br/>• Kolmogorov-Smirnov<br/>• Jarque-Bera<br/>• Anderson-Darling"]
-        B2["🎯 Outlier Tespiti<br/>• IQR Method<br/>• Z-Score<br/>• Modified Z-Score"]
-        B3["🔗 Korelasyon<br/>• Pearson<br/>• VIF Analysis<br/>• Domain Checks"]
+    subgraph "🔬 Statistical Tests"
+        B1["🧪 Normality Tests<br/>• Shapiro-Wilk<br/>• Kolmogorov-Smirnov<br/>• Jarque-Bera<br/>• Anderson-Darling"]
+        B2["🎯 Outlier Detection<br/>• IQR Method<br/>• Z-Score<br/>• Modified Z-Score"]
+        B3["🔗 Correlation<br/>• Pearson<br/>• VIF Analysis<br/>• Domain Checks"]
     end
     
-    subgraph "📈 Sonuçlar"
-        C1["✅ Güvenirlik: 75/100<br/>(İYİ SEVIYE)"]
-        C2["🧹 En İyi: IQR 2.0<br/>(%2 veri kaybı)"]
-        C3["📊 Normal Dağılan: 0/9<br/>(Non-parametrik önerilir)"]
-        C4["🔍 Düşük Korelasyon: 1<br/>(Avg CTAT ↔ Distance)"]
+    subgraph "📈 Results"
+        C1["✅ Reliability: 75/100<br/>(GOOD LEVEL)"]
+        C2["🧹 Best: IQR 2.0<br/>(2% data loss)"]
+        C3["📊 Normal Distribution: 0/9<br/>(Non-parametric recommended)"]
+        C4["🔍 Low Correlation: 1<br/>(Avg CTAT ↔ Distance)"]
     end
     
     A --> B1
@@ -126,7 +126,7 @@ flowchart LR
     B2 --> C2
     B3 --> C4
     
-    C1 --> D["🎓 Akademik Kullanım<br/>Hazır"]
+    C1 --> D["🎓 Academic Use<br/>Ready"]
     C2 --> D
     C3 --> D
     C4 --> D
@@ -273,29 +273,29 @@ This analysis demonstrates that Uber ride data can be analyzed at professional s
 
 ---
 
-## 🎨 Görselleştirme ve Diyagram Araçları
+## 🎨 Visualization and Diagram Tools
 
-Bu dökümanları daha da geliştirmek için önerilen araçlar:
+Recommended tools to enhance these documents:
 
-### 🏆 En İyi Seçenekler
+### 🏆 Best Options
 
-| 🛠️ Araç | 💰 Fiyat | 🎯 En İyi Kullanım | 🔗 Link |
-|----------|----------|-------------------|---------|
-| **Draw.io** | 🆓 Ücretsiz | GitHub entegrasyonu, teknik diyagramlar | [app.diagrams.net](https://app.diagrams.net/) |
-| **Miro** | 💳 Freemium | Ekip çalışması, brainstorming | [miro.com](https://miro.com/) |
-| **MermaidJS** | 🆓 Ücretsiz | Kod içi diyagramlar, markdown | [mermaid.js.org](https://mermaid.js.org/) |
-| **Canva** | 💳 Freemium | Sunum ve pazarlama materyalleri | [canva.com](https://www.canva.com/) |
+| 🛠️ Tool | 💰 Price | 🎯 Best Use Case | 🔗 Link |
+|----------|----------|------------------|---------|
+| **Draw.io** | 🆓 Free | GitHub integration, technical diagrams | [app.diagrams.net](https://app.diagrams.net/) |
+| **Miro** | 💳 Freemium | Team collaboration, brainstorming | [miro.com](https://miro.com/) |
+| **MermaidJS** | 🆓 Free | Code-based diagrams, markdown | [mermaid.js.org](https://mermaid.js.org/) |
+| **Canva** | 💳 Freemium | Presentations and marketing materials | [canva.com](https://www.canva.com/) |
 
-### 💡 Hızlı Başlangıç
+### 💡 Quick Start
 
-Bu README'de gördüğünüz diyagramlar **MermaidJS** ile oluşturuldu. GitHub'da otomatik olarak render edilir!
+The diagrams you see in this README were created with **MermaidJS**. They render automatically on GitHub!
 
 ```markdown
-# Kendi diyagramınızı oluşturmak için:
+# To create your own diagram:
 ```mermaid
 graph TD
-    A[Başlangıç] --> B[İşlem]
-    B --> C[Sonuç]
+    A[Start] --> B[Process]
+    B --> C[Result]
 ```
 
 ---
